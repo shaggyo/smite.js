@@ -1,13 +1,13 @@
 {
   "name": "smite.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node package for interacting with SMITE API",
   "main": "./lib/index.js",
   "scripts": {
     "build": "gulp",
     "clear": "rimraf lib dist",
-    "test": "npm run build && mocha ./test/index.js",
-    "test:single": "mocha ./test/index.js",
+    "test": "npm run build && mocha ./test",
+    "test:single": "mocha ./test",
     "prepublish": "npm run clear && npm run build"
   },
   "repository": {

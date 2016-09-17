@@ -14,13 +14,12 @@ export function createSession (opts) {
     throw new Error('You must specify auth id and key!')
   }
 
-  let s_time = moment().utc().format('YYYYMMDDHHmmss')
-  let auth_hash = md5(`${auth_id}createsession${auth_key}${s_time}`)
+  let timestamp = moment().utc().format('YYYYMMDDHHmmss')
+  let hash = md5(`${auth_id}createsession${auth_key}${timestamp}`)
   let base_url = 'http://api.smitegame.com/smiteapi.svc/createsessionjson/'
+  let url = `${base_url}${auth_id}/${hash}/${timestamp}`
 
-  let r_url = `${base_url}${auth_id}/${auth_hash}/${s_time}`
-
-  return fetch(r_url, {
+  return fetch(url, {
     'no-cors': false
   })
 }
