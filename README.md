@@ -1,3 +1,4 @@
+# Smite.js [![npm version](https://img.shields.io/npm/v/smite.js.svg)]() [![build status](https://travis-ci.org/shaggyo/smite.js.svg?branch=master)]() [![dependency status](https://david-dm.org/shaggyo/smite.js.svg)]() [![license](https://img.shields.io/github/license/shaggyo/smite.js.svg)]()
 > Node package for interacting with SMITE API
 
 ## What you need
