@@ -1,0 +1,38 @@
+{
+  "name": "smite.js",
+  "version": "0.0.1",
+  "description": "Node package for interacting with SMITE API",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "gulp",
+    "clear": "rimraf lib dist",
+    "prepublish": "npm run clear && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaggyo/smite.js.git"
+  },
+  "keywords": [
+    "Smite",
+    "API",
+    "Node",
+    "JavaScript"
+  ],
+  "author": "shaggyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaggyo/smite.js/issues"
+  },
+  "homepage": "https://github.com/shaggyo/smite.js#readme",
+  "devDependencies": {
+    "babel-preset-latest": "^6.14.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "md5": "^2.2.1",
+    "moment": "^2.15.0"
+  }
+}
